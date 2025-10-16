@@ -1,12 +1,12 @@
 import finalhandler from "finalhandler";
 import http from "http";
 import Router from "router";
-import { json } from "body-parser";
-import { pool, init } from "./database";
+import bodyParser from "body-parser";
+import { pool, init } from "./database.js";
 
 const router = Router();
 
-router.use(json());
+router.use(bodyParser.json());
 
 router.post("/api/alumnos", async (req, res) => {
   try {

@@ -1,0 +1,22 @@
+{
+  "name": "teczi",
+  "version": "1.0.0",
+  "type": "module",
+  "private": true,
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tello2004/teczi.git"
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tello2004/teczi/issues"
+  },
+  "homepage": "https://github.com/tello2004/teczi#readme",
+  "dependencies": {
+    "body-parser": "2.2.0",
+    "finalhandler": "2.1.0",
+    "pg": "8.16.3",
+    "router": "2.2.0"
+  }
+}

@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Teczi</title>
+    <link href="style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header class="navbar">
+      <a href="#" class="logo">TECZI</a>
+      <nav class="nav-links">
+        <a href="#cursos">Cursos</a>
+        <a href="#nosotros">Nosotros</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <video class="hero-video" autoplay loop muted playsinline>
+          <source
+            src="https://galeria-teczi-marto.s3.us-east-1.amazonaws.com/video1.mp4"
+            type="video/mp4"
+          />
+          Tu navegador no soporta el tag de video.
+        </video>
+        <div class="hero-content">
+          <h1>Optimiza tus Proyectos con <span>Metodologías Ágiles</span></h1>
+          <p>
+            Lleva a tu equipo al siguiente nivel con nuestras soluciones de
+            entrenamiento en tecnología y gestión.
+          </p>
+        </div>
+      </section>
+
+      <section id="cursos" class="courses-section">
+        <h2>Nuestros Cursos Destacados</h2>
+        <div class="carousel-container">
+          <div class="carousel-track">
+            <div class="carousel-slide">
+              <img
+                src="https://galeria-teczi-marto.s3.us-east-1.amazonaws.com/curso1.jpeg"
+                alt="Imagen de curso 1"
+              />
+            </div>
+            <div class="carousel-slide">
+              <img
+                src="https://galeria-teczi-marto.s3.us-east-1.amazonaws.com/curso2.jpeg"
+                alt="Imagen de curso 2"
+              />
+            </div>
+            <div class="carousel-slide">
+              <img
+                src="https://galeria-teczi-marto.s3.us-east-1.amazonaws.com/curso3.jpeg"
+                alt="Imagen de curso 3"
+              />
+            </div>
+          </div>
+          <div class="carousel-nav">
+            <button class="carousel-button prev">&#10094;</button>
+            <button class="carousel-button next">&#10095;</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="video-section">
+        <video controls width="100%">
+          <source
+            src="https://galeria-teczi-marto.s3.us-east-1.amazonaws.com/video2.mp4"
+            type="video/mp4"
+          />
+          Tu navegador no soporta el tag de video.
+        </video>
+      </section>
+
+      <section id="registro" class="register-section">
+        <div class="register-container">
+          <h2>Regístrate en Nuestros Cursos</h2>
+          <form id="register-form">
+            <div class="form-group">
+              <label for="nombre">Nombre</label>
+              <input type="text" id="nombre" name="nombre" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Correo Electrónico</label>
+              <input type="email" id="email" name="email" required />
+            </div>
+            <div class="form-group">
+              <label for="curso">Curso</label>
+              <select id="curso" name="curso" required>
+                <option value="" disabled selected>Selecciona un curso</option>
+                <option value="1">Desarrollo Web</option>
+                <option value="2">UI/UX</option>
+                <option value="3">Ingeniería de Prompts</option>
+              </select>
+            </div>
+            <button type="submit" class="submit-btn">Registrarme</button>
+          </form>
+        </div>
+      </section>
+
+      <div id="modal" class="modal">
+        <div class="modal-content">
+          <span class="close-modal">&times;</span>
+          <h2>¡Registro Exitoso!</h2>
+          <p>
+            Por favor, verifica tu correo electrónico para completar el
+            registro.
+          </p>
+        </div>
+      </div>
+    </main>
+
+    <footer id="contacto" class="footer">
+      <p>
+        &copy; 2025 TECZI Training Solutions. Todos los derechos reservados.
+      </p>
+    </footer>
+
+    <script type="module" src="app.mjs"></script>
+  </body>
+</html>
